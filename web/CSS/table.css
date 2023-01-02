@@ -1,0 +1,16 @@
+table,
+tr,
+th,
+td {
+  border: 2px solid black;
+  border-collapse: collapse;
+  padding: 15px;
+  border-spacing: 10px;
+  /* background-color: pink; */
+}
+th{
+background-color: pink;
+}
+td{
+    background-color: chartreuse;
+}

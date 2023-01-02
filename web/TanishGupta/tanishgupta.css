@@ -1,0 +1,87 @@
+body{
+    background-color: pink;
+    text-align: center;
+}
+h1{
+text-decoration: solid;
+color: blueviolet;
+text-align: center;
+padding: 20px;
+border-color: aqua;
+}
+a{
+    text-decoration: none;
+    text-align:center;
+    color: navy;
+    /* padding: 220px; */
+    font-size: 10mm;
+}
+/* From cssbuttons.io by @westitan */
+button {
+    position: relative;
+    padding: 19px 36px;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    border-radius: 40px;
+    border: none;
+   }
+   
+   button span {
+    position: relative;
+    color: #fff;
+    font-family: Arial;
+    letter-spacing: 8px;
+    z-index: 1;
+   }
+   
+   button .liquid {
+    position: absolute;
+    top: -80px;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background: #4973ff;
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, .5);
+    transition: .5s;
+   }
+   
+   button .liquid::after,
+   button .liquid::before {
+    content: '';
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -75%);
+    background: #fff;
+   }
+   
+   button .liquid::before {
+    border-radius: 45%;
+    background: rgba(20, 20, 20, 1);
+    animation: animate 5s linear infinite;
+   }
+   
+   button .liquid::after {
+    border-radius: 40%;
+    background: rgba(20, 20, 20, .5);
+    animation: animate 10s linear infinite;
+   }
+   
+   button:hover .liquid {
+    top: -120px;
+   }
+   
+   @keyframes animate {
+    0% {
+     transform: translate(-50%, -75%) rotate(0deg);
+    }
+   
+    100% {
+     transform: translate(-50%, -75%) rotate(360deg);
+    }
+   }
+   /* background-image{ url "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1452' height='1200' preserveAspectRatio='none' viewBox='0 0 1452 1200'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1003%26quot%3b)' fill='none'%3e%3crect width='1452' height='1200' x='0' y='0' fill='url(%23SvgjsLinearGradient1004)'%3e%3c/rect%3e%3cpath d='M560.357%2c1533.19C664.572%2c1535.331%2c781.109%2c1530.728%2c837.942%2c1443.348C898.548%2c1350.168%2c884.251%2c1223.989%2c820.848%2c1132.689C764.748%2c1051.904%2c658.666%2c1040.634%2c560.357%2c1043.622C468.756%2c1046.406%2c376.671%2c1071.424%2c325.922%2c1147.733C269.415%2c1232.701%2c248.819%2c1345.154%2c301.844%2c1432.337C353.359%2c1517.038%2c461.241%2c1531.154%2c560.357%2c1533.19' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1054.503662781472 249.80510915568772L807.3294326177581 398.00194529748387 1025.5066409654244 523.96661526805z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1485.3305082107586 724.047811498761L1354.5229631510192 550.4603361983554 1180.9354878506135 681.2678812580948 1311.743032910353 854.8553565585004z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M422.11391279371253 790.8597275785253L593.6710617997379 874.5337399502132 677.345074171426 702.9765909441878 505.7879251654005 619.3025785724999z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M106.971%2c988.063C194.181%2c989.869%2c265.85%2c925.503%2c307.593%2c848.91C347.413%2c775.846%2c354.602%2c686.093%2c309.739%2c616.013C267.717%2c550.371%2c184.906%2c536.449%2c106.971%2c535.52C26.8%2c534.564%2c-62.52%2c542.674%2c-104.347%2c611.076C-147.424%2c681.522%2c-120.135%2c768.861%2c-79.76%2c840.89C-38.226%2c914.985%2c22.047%2c986.305%2c106.971%2c988.063' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M475.75928034386743 324.21466855389906L781.127915481034 168.9879767170177 532.873664349337 1.538369986349494z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1036.16 1067.97 a368.1 368.1 0 1 0 736.2 0 a368.1 368.1 0 1 0 -736.2 0z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1025.753861716127 446.56796593930096L1333.8675926922797 397.7675451023382 1285.067171855317 89.65381412618547 976.9534408791642 138.45423496314822z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M841.0861540517199-58.306382374722794L679.1739207512284-8.8048449512699 834.3823435366535 209.312736287741z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1003'%3e%3crect width='1452' height='1200' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='4.34%25' y1='-5.25%25' x2='95.66%25' y2='105.25%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1004'%3e%3cstop stop-color='%230e2a47' offset='0'%3e%3c/stop%3e%3cstop stop-color='%2300459e' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e") } */
